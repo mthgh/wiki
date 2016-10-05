@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a class='menu' href='/signup'>signup</a>
+<a class='menu' href='/'>mainpage</a>
+<br>
+<br>
+<br>
+<br>
+<h2>Login</h2>
+
+<form method='post'>
+  <table>
+    <tr>
+	  <td>Username</td>
+	  <td><input type='text' name='username' value={{username}}></td>
+	</tr>
+	<tr>
+	  <td>Password</td>
+	  <td><input type='password' name='pw'></td>
+	</tr>
+  </table>
+  <div class='error'>{{error}}</div>
+  <br>
+  <input type='submit'>
+</form>
+{% endblock %}

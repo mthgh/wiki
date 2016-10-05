@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <a class='menu' href='/_history{{path}}'>history</a>
+    <a class='menu' href='/logout'>logout</a>
+    <div class='menu'>{{username}}</div>
+	<br>
+	<br>
+    <form method='post'>
+      <h3>Please input content below</h3>
+	  <textarea name='content'>{{content}}</textarea>
+	  <br>
+	  <br>
+	  <div class='error'>{{error}}</div>
+	  <br>
+	  <div><input type='submit'></div>
+    </form>
+{% endblock %}

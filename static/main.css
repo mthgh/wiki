@@ -1,0 +1,31 @@
+       body {font-family:"times new roman";
+            padding: 10px;
+	        margin: 0 auto;
+     	    width: 800px;
+		   }
+		   
+	  .menu {float:right;
+	        margin-right:0.5em;
+			color:rgb(182, 182, 180);
+			}
+			
+	   .font {font-size:25px;
+	         }
+	   
+	   .error{font-size:17px;
+	          color:red;
+		     }
+		textarea{width:700px;
+	            height:400px;
+				resize:none;
+				font-size:17px;
+				font-family:'times new roman';
+				text-align:justify
+				}
+	 .edit_user{font-size:18px;
+	            color:gray;
+				}
+		.history{padding-left:15px;
+		         padding-right:15px;
+				 padding-top:5px;
+				 font-size:17px}

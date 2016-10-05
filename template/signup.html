@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a class='menu' href='/login'>login</a>
+<a class='menu' href='/'>mainpage</a>
+<br>
+<br>
+<br>
+<br>
+<h2>Sign Up</h2>
+
+<form method='post'>
+  <table>
+    <tr>
+	  <td>Username</td>
+	  <td><input type='text' name='username' value={{username}}></td>
+	  <td  class='error'>{{error1}}</td>
+	</tr>
+	<tr>
+	  <td>Password</td>
+	  <td><input type='password' name='pw'></td>
+	  <td class='error'>{{error2}}</td>
+	</tr>
+	<tr>
+	  <td>Verify Password</td>
+	  <td><input type='password' name='verify'></td>
+	  <td  class='error'>{{error3}}</td>
+	</tr>
+	<tr>
+	  <td>Email</td>
+	  <td><input type='text' name='email' value={{email}}></td>
+	  <td  class='error'>{{error4}}</td>
+	</tr>
+  </table>
+  <br>
+  <br>
+  <input type='submit'>
+</form>
+
+{% endblock %}

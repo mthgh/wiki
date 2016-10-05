@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if username %}
+    <a class='menu' href='/logout'>logout</a>
+    <div class='menu'>{{username}}</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <p class='font'>input a url to start edit</p>
+  {% else %}
+    <br>
+	<br>
+	<br>
+	<br>
+	<br>
+    <div class='font'>
+	  <a href='/signup'>creat an accout</a> or <a href='/login'>login</a> to start editing
+	</div>
+  {% endif %}
+{% endblock %}

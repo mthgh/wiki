@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+  {% if username %}
+  <a class='menu' href='/logout'>logout</a>
+  <a class='menu' href=/_edit{{path}}>edit</a>
+  <div class='menu'>{{username}}</div>
+  {% else %}
+  <a class='menu' href='/login'>login</a>
+  <a class='menu' href='/signup'>signup</a>
+  <a class='menu' href='/'>mainpage</a>
+  {% endif %}
+  <br>
+  <br>
+  <br>
+  <br>  
+  <table>
+	{% for i in range(0, q|length) %}
+	  <tr>
+	    <td class='history'>{{q[i].created.strftime("%c")}}</td>
+		<td class='history'>{{q[i].content[:45]}}</td>
+		<td class='history'>edit by {{q[i].username}}</td>
+		<td class='history'><a href={{path}}?v={{i}}>view</td>
+		<td class='history'><a href=/_edit{{path}}?v={{i}}>edit</td> 
+	  </tr>
+	{% endfor %}
+  </table> 
+	
+{% endblock %}
