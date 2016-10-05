@@ -1,7 +1,7 @@
 # wiki
 This is the final project from [Udacity Web Development (cs253)](https://www.udacity.com/course/web-development--cs253). 
 
-The aim of the project is to build a wiki. The wiki should be a website where users can create accounts, and upon login to their account, users could input random path to url to do edition. If the input path already exist, the created page will show up. Users can always further modify a page which was created already and the editing history for a specific path is available.
+The aim of the project is to build a wiki. The wiki should be a website where users can create accounts, and upon login to their account, users could input random path to url to do edition. If the input path already exist, the created page will show up. Users can always modify a page which was created already. The editing history for a specific path is available.
 
 The wiki was built using webapp2 as web framework, and jinja2 as templating language.   
 
